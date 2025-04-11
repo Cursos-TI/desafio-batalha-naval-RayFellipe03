@@ -76,6 +76,5 @@ NavioDiagonal(2,3);
         printf("\n");
     }
     
-
     return 0;
 }
