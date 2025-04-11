@@ -48,7 +48,7 @@ void NavioDiagonal(int Cima, int Lado){ //funçao para posicionar barco na horiz
 
 int main() {
     // Nível Aventureiro -
-
+    
 // Posicionamento dos quatro navios no tabuleiro, incluindo dois na diagonal.
 NavioHorizontal(0,0);
 NavioVertical(6,5);
