@@ -36,6 +36,16 @@ void NavioVertical(int Cima, int Lado){ //funçao para posicionar barco na horiz
 
 }
 
+void NavioDiagonal(int Cima, int Lado){ //funçao para posicionar barco na horizontal
+    for (int MudarLinha = 0; MudarLinha < 3; MudarLinha++) //loop que altera valor de agua para barco
+    {
+        tabuleiro[Cima][Lado]=3;
+        Cima = Cima+1; //atribuiçao responsavel pela funcionalidade do loop
+        Lado = Lado+1;
+    }
+
+}
+
 int main() {
     // Nível Aventureiro -
 
