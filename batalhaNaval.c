@@ -49,8 +49,33 @@ void NavioDiagonal(int Cima, int Lado){ //funçao para posicionar barco na horiz
 int main() {
     // Nível Aventureiro -
 
-    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
-    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
+// Posicionamento dos quatro navios no tabuleiro, incluindo dois na diagonal.
+NavioHorizontal(0,0);
+NavioVertical(6,5);
+NavioDiagonal(7,1);
+NavioDiagonal(2,3);
+
+
+    // Exibição do tabuleiro completo no console, 0 para posições vazias e 3 para posições ocupadas.
+    printf("    "); //cabeçalho
+    for (int Colunas = 0; Colunas < COLUNA; Colunas++)
+    {
+        printf("%c   ",'A'+Colunas);
+    }
+    printf("\n");
+
+
+    for (int Linhas = 0; Linhas < LINHA; Linhas++)
+    {
+        printf("%d   ", Linhas);
+        for (int Colunas = 0; Colunas < COLUNA; Colunas++)
+        {
+            printf("%d   ",tabuleiro[Linhas][Colunas]);
+        }
+
+        printf("\n");
+    }
+    
 
     return 0;
 }
